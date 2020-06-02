@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="mainer" id="app">
+      <h1>Введите цвет:</h1>
+      <input type="text" v-model="newColor" />
+      <button @click="addColor()">Активировать</button>
+      <p :style="styles" v-for="color in colors">{{ color }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
